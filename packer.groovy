@@ -5,6 +5,6 @@ node('master') {
 AMI_ID=`echo $ARTIFACT |cut -d \':\' -f2`
 echo \'variable "APP_INSTANCE_AMI" { default = "\'${AMI_ID}\'" }\' > amivar.tf
 
-aws s3 cp amivar.tf s3://terraform-state-madan8198/amivar.tf'''
+aws s3 cp amivar.tf s3://terraform-state-madanmk07/amivar.tf'''
 
 }
